@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "novaclient",
+  "version": "${version}",
+  "name": "Nova Client",
+  "description": "Alles-in-einem PvP-Client: Right-Shift-Menü, Fly, ESP, X-Ray, Stun Slam, Auto Crystal, Auto Anchor, Auto Totem.",
+  "authors": ["you"],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.nova.NovaClient"]
+  },
+  "mixins": [
+    { "config": "novaclient.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
